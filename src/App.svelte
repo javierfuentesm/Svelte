@@ -1,4 +1,5 @@
 <script>
+  import About from "./components/About.svelte";
   export let name;
   export let lastName = "Fuentes";
 </script>
@@ -8,14 +9,10 @@
     background-color: #f2eee2;
     color: #0084f6;
   }
-  :global(:root){
-	  --theme-color: purple;
+  :global(:root) {
+    --theme-color: purple;
+  }
 
-  }
-  p{
-	  color: var(--theme-color);
-	  font-size: 25px;
-  }
   main {
     text-align: center;
     padding: 1em;
@@ -39,8 +36,6 @@
 
 <main>
   <h1>Hello {name} {lastName}!</h1>
-  <p>
-  Frontend developer
-  </p>
-  
+  <About />
+
 </main>
