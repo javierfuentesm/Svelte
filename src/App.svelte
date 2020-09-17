@@ -1,7 +1,15 @@
 <script>
   import About from "./components/About.svelte";
+  import Text from './components/Text.svelte'
+  import Person from './components/Person.svelte'
   export let name;
   export let lastName = "Fuentes";
+
+  const data = {
+    name:"Javier",
+    lastName: "Fuentes",
+    age:26
+  }
 </script>
 
 <style>
@@ -37,5 +45,8 @@
 <main>
   <h1>Hello {name} {lastName}!</h1>
   <About />
+  <Text anotherText="Hola!!"/>
+  <Text/>
+  <Person {...data} />
 
 </main>
