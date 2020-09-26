@@ -10,7 +10,7 @@
     })
 </script>
 <style>
-    .Photos{
+    .Photos {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
@@ -19,7 +19,6 @@
 </style>
 
 <div class="Photos">
-
     {#each photos as photo}
         <figure>
             <img src={photo.thumbnailUrl} alt={photo.title}>
